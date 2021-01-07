@@ -10,6 +10,7 @@ if(isset($_POST['submit'])){
        $filename = $_FILES['file']['name'][$i];
         // Upload file
         move_uploaded_file($_FILES['file']['tmp_name'][$i],'upload/'.$filename);
+        echo "uploaded";
 
     
     }
